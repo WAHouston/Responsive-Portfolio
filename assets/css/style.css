@@ -15,8 +15,9 @@
 
 #heading {
     margin: auto;
-    width: 960px;
+    width: 100%;
     height: 100%;
+    max-width: 960px;
 }
 
 main {
@@ -29,8 +30,9 @@ main {
     margin-right: auto;
     margin-bottom: 20px;
     padding: 30px;
-    width: 960px;
+    width: calc(100% - 40px);
     border: 1px solid #dddddd;
+    max-width: 960px;
 }
 
 main:after {
@@ -42,8 +44,9 @@ main:after {
 header {
     border-bottom: 2px solid #cccccc;
     background: #ffffff;
-    height: 90px;
+    height: auto;
     width: 100%;
+    overflow: auto;
 }
 
 h1 {
@@ -183,4 +186,26 @@ p{
     text-align: center;
     padding-top: 19px;
     padding-bottom: 19px;
+}
+@media screen and (max-width: 980px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 640px) {
+    #name{
+        width:100%;
+        text-align: center;
+    }
+    nav{
+        width:100%;
+        text-align: center;
+    }
+    #profpic{
+        width:100%;
+    }
+    main{
+        
+    }
 }
